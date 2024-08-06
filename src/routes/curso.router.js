@@ -80,11 +80,11 @@ app.get("/clases/:clases", async (req, res) => {
   }
 });
 
-//buscar curso por comision
-app.get("/comision/:comision", async (req, res) => {
+//buscar curso por estado
+app.get("/estado/:estado", async (req, res) => {
   try {
-    const { comision } = req.params;
-    const curso = await CursoModel.findOne({ comision });
+    const { estado } = req.params;
+    const curso = await CursoModel.find({ estado });
     if (!curso) {
       res.status(404).json({ message: "Curso no encontrado" });
     } else {
