@@ -3,7 +3,7 @@ import UserRouter from "./routes/curso.router.js";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
-//instanciar el manejador de variables de entorno:
+//instanciar el manejador de variables de entorno::
 dotenv.config();
 
 const app = express();

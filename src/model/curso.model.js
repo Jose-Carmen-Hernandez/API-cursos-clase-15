@@ -1,6 +1,6 @@
 import { Schema, model } from "mongoose";
 
-//instanciar esquema:
+//instanciar el esquema:
 const cursoSchema = new Schema({
   nombre: {
     type: String,

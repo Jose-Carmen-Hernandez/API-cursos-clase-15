@@ -3,7 +3,7 @@ import { CursoModel } from "../model/curso.model.js";
 
 const app = Router();
 
-//obtener todos los cursos:
+//obtener todos los cursos existentes:
 app.get("/", async (req, res) => {
   const cursos = await CursoModel.find();
   res.status(200).json({ message: "Todo correcto", payload: cursos });
